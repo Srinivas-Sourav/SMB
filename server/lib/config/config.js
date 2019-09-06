@@ -21,7 +21,7 @@ const constants = require('../util/constants');
 exports.ReturnBotSession = true;
 
 //b1 connection parameters
-exports.B1SLBaseUrl = process.env.B1_SL_BASE_URL;
+exports.B1SLBaseUrl = process.env.B1_SL_BASE_URL || 'https://202.65.153.189:59999:50000';
 exports.B1CompanyDB = process.env.B1_COMPANY_DB;
 exports.B1UserName = process.env.B1_USER_NAME;
 exports.B1Password = process.env.B1_USER_PASSWORD;
