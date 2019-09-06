@@ -47,7 +47,7 @@ let sl_cookie;
 let sl_options;
 
 //CORS Middleware
-var whitelist = ['http://127.0.0.1:59999'];
+var whitelist = ['http://202.65.153.189:59999'];
 var corsOptions = {
     origin: function (origin, callback) {
         if (whitelist.indexOf(origin) !== -1) {
@@ -114,7 +114,7 @@ app.listen(port, () => {
             console.log('An error occurs in login to Service Layer');
         });
 
-    console.log('SAP SMB(B1&ByD) Assistant Bot Powered by SAP Conversational AI is running at http://127.0.0.1:' + port + '/webhooks/analytics');
+    console.log('SAP SMB(B1&ByD) Assistant Bot Powered by SAP Conversational AI is running at http://202.65.153.189:' + port + '/webhooks/analytics');
 });
 
 //if the node app is exit, we make sure to clean up
